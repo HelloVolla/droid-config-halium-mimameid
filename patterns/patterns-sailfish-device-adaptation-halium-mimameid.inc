@@ -45,7 +45,7 @@ Requires: libngf-qt5-qtfeedback
 Requires: hybris-libsensorfw-qt5
 
 # Pulseadio
-Requires: pulseaudio-modules-droid-jb2q
+Requires: pulseaudio-modules-droid
 Requires: pulseaudio-modules-droid-hidl
 Requires: audiosystem-passthrough-dummy-af
 
