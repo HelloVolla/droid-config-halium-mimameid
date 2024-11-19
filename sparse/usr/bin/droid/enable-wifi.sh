@@ -1,10 +1,16 @@
 #!/bin/bash
 
-#while [ ! -e "/dev/wmtWifi" ]; do
-while [ "`getprop vendor.connsys.driver.ready`" != "yes" ]; do
-        sleep 1
-done
+modprobe wlan_drv_gen4m
 
-sleep 3
+# Wait for the property system to be up.
+while [ ! -e /dev/socket/property_service ]; do sleep 0.1; done
 
-echo 1 > /dev/wmtWifi
+# Wait for nvram to be loaded.
+while [ "$(getprop vendor.service.nvram_init)" != "Ready" ]; do sleep 0.2; done
+while [ "$(getprop vendor.mtk.nvram.ready)" != "1" ]; do sleep 0.2; done
+
+# enable Wi-Fi adapter in client mode
+while [ ! -e /dev/wmtWifi ]; do sleep 0.2; done
+echo S > /dev/wmtWifi
+
+setprop wifi.interface wlan0
