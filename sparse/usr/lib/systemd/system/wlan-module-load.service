@@ -1,7 +1,7 @@
 [Unit]
 Description=Load wlan module
 Conflicts=shutdown.target actdead.target
-After=droid-hal-init.service
+After=bluebinder.service
 
 [Service]
 Type=oneshot
