@@ -51,8 +51,8 @@ Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
 #Requires: droid-fake-crypt
 
-#WLAN Suspend
-Requires: sailfish-connman-plugin-suspend
+#WLAN
+Requires: sailfish-connman-plugin-tethering-wmtwifi
 
 #Debug tools
 Recommends: vi
