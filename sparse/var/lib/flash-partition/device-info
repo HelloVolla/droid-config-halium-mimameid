@@ -1,0 +1,13 @@
+CPUCHECK_STRING="MT6769V/CZ"
+
+# Because of flash-partition checks, 1 needs to be defined
+# Others can go with partition numbers
+PART_1="boot_a"
+PART_28="dtbo_a"
+PART_27="vendor_boot_a"
+
+PART_REAL_1="mmcblk0p26"
+PART_REAL_28="mmcblk0p28"
+PART_REAL_27="mmcblk0p27"
+
+PART_I="1 28 27"
