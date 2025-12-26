@@ -6,6 +6,7 @@ Requires: patterns-sailfish-device-adaptation-halium-mimameid
 
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
+Requires: patterns-sailfish-store-applications
 Requires: patterns-sailfish-ui
 
 # jolla-rnd-device will enable usb-moded even when UI is not yet
