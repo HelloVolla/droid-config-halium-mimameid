@@ -43,9 +43,6 @@ Requires: csd
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
-# Fxtec pro1 keyboard layout
-#Requires: xkeyboard-config-pro1
-
 #Add FP support
 Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
@@ -53,6 +50,7 @@ Requires: sailfish-devicelock-fpd
 
 #WLAN
 Requires: sailfish-connman-plugin-tethering-wmtwifi
+Requires: sailfish-connman-plugin-suspend
 
 #Debug tools
 Recommends: vi
