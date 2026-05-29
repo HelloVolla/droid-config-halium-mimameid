@@ -89,9 +89,6 @@ Requires: sailfish-device-encryption-community-droid
 # For GPS
 Requires: geoclue-provider-hybris
 
-# For mounting SD card automatically
-Requires: sd-utils
-
 %description -n patterns-sailfish-device-adaptation-halium-mimameid
 Pattern with packages for halium-mimameid HW Adaptation
 
